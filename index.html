@@ -1,433 +1,253 @@
-<html>
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=gbk">
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<title>Zhaoquan Yuan's Homepage </title>
-<style>
-body {
-font-family: "Times New Roman", "Helvetica Neue", Helvetica, Arial, sans-serif;
-color: #444;
-font-size: 62.5%;
-background: #f4f4f4;
-}
-
-a:link,
-a:visited {
-color: #1279f8;
-text-decoration: none;
-}
-
-a:hover {
-text-decoration: underline;
-}
-
-.main {
-display: flex;
-}
-
-.left {
-font-size: 16px;
-line-height: 1.3;
-background: #fff;
-border-radius: 6px;
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-position: fixed;
-top: 8px;
-left: 8px;
-bottom: 8px;
-float: left;
-width: 285px;
-min-width: 285px;
-margin:0px;
-}
-
-.right {
-margin: 0 0 0 10px;
-flex-grow: 1;
-font-size: 17px;
-line-height: 1.8;
-background: #fff;
-border-radius: 6px;
-margin-left: 295px;
-padding-top:0px;
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-}
-
-.rightBox {
-padding: 5px 100px 20px;
-border-top: 1px solid #eee;
-position: relative;
-}
-.rightBox>p{
-margin-top: -80px;
-padding-top: 80px;
-}
-
-.rightBox table {
-border-top: 1px solid #e2b0b5;
-border-left: 1px solid #e2b0b5;   <!*********************>
-}
-
-.rightBox td,
-.rightBox th {
-border-right: 1px solid #e2b0b5;
-border-bottom: 1px solid #e2b0b5;
-}
-
-.rightBox th {
-padding: 10px;
-}
-
-.rightBox td {
-font-size: 16px;
-line-height: 1.8;
-padding: 10px;
-}
-
-.right h4 {
-font-family: "Roboto Condensed", sans-serif;
-margin-bottom: 10px;
-position: relative;
-color: #000;
-font-size: 18px;
-line-height: 20px;
-}
-
-.text span {
-border: orangered 1px solid;
-color: #fff;
-padding: 0px 8px;
-margin-right: 8px;
-border-radius: 10px;
-color: orangered;
-}
-
-.box {
-padding: 20px 30px;
-border-top: 1px solid #eee;
-position: relative;
-}
-
-h1 {
-margin: 0 0 10px 0;
-text-align: center;
-font-size: 20px
-}
-
-h1 p {
-text-align: center;
-}
-
-.headerImg {
+<!DOCTYPE html>
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Zhaoquan Yuan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 
 
-display: block;
-width: 200px;
-height: 200px;
-margin: 0 auto 5px auto;
-border-radius: 10%;
-}
+  
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./zqyuan_files/js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-h3 {
-margin: 0 0 10px 0;
-font-size: 18px;
-font-weight: 500;
-letter-spacing: .02em;
-text-transform: uppercase;
-color: #999;
-}
+    gtag('config', 'UA-155179995-1');
+    </script>
 
-.wrap {
-position: fixed;
-top: 8px; right: 8px; left: 303px;
-border-bottom: 1px solid #f4f4f4;
-background: #fff; z-index: 10;
-}
-.wrap:before {
-display: block;
-content: '';
-position: fixed;
-top: 0px; right: 8px; left: 303px; height: 8px;
-background: #f4f4f4;
+     
+	<link href="./zqyuan_files/css" rel="stylesheet">
+	<link href="./zqyuan_files/css(1)" rel="stylesheet">
 
-}
+	<!-- Animate.css -->
+    <link rel="stylesheet" href="./zqyuan_files/animate.css">	
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./zqyuan_files/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="./zqyuan_files/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="./zqyuan_files/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="./zqyuan_files/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="./zqyuan_files/owl.carousel.min.css">
+	<link rel="stylesheet" href="./zqyuan_files/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="./zqyuan_files/style.css">
 
-.wrap ul {
-padding: 0 30px;
-text-align: center;
-}
-
-.wrap li {
-display: inline-block;
-margin: 10px 10px 0 0;
-font-size: 18px;
-height: 20px;
-line-height: 20px;
-line-height: 1;
-}
-
-.wrap li:hover {}
-
-.wrap li a {
-display: inline-block;
-color: #444;
-}
-
-.wrap li a {
-text-decoration: none;
-color: #444;
-background: #fff;
-padding: 6px;
-}
-
-.wrap li a:hover {
-color: #fff;
-background: #3399FF;  <!***************>
-padding: 6px;
-}
-.backtop{
-position: fixed;
-right: 2rem;
-bottom: 2rem;
-z-index: 1000;
-border: 1px solid red；
-}
-a>.btnbacktop{
-font-size: 2rem;
-margin: 1rem 0 0;
-padding: 0;
-width: 3.33rem;
-height: 3.33rem;
-line-height: 0;
-color: #333;
-background-color: #ffffff;
-border: 1px solid #e3e8ee;
-border-radius: 50%;
-box-shadow: 0 0 5px rgba(0,0,0,.05);
-}
-#hqestop img{opacity:0.6;}
-
-@media screen and (max-width: 1100px) {
-.main {
-flex-direction: column;
-
-}
-.main .wrap {
-display: none;
-}
-
-.main .left {
-width:100%;
-left: 0px;
-position: relative;
-}
-
-.main .right {
-width: 100%;
-margin: 10px 0 0 0;
-box-sizing: border-box;
-}
-}
-</style>
-</head>
-
-<!*************************个人信息************************>
-
-<body>
-<div class="main">
-<div class="left">
-<h1>
-<p><img alt="" src="profilePhoto.JPG" style="WIDTH: 127px; HEIGHT: 180px" /></p>
-<p><b>
-Zhaoquan Yuan
-</b>
-</p>
-</h1>
+	<!-- Modernizr JS -->
+	<script src="./zqyuan_files/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+  
+	</head>
 
 
-<div class="box">
 
-<p> <i>Associate Professor, Ph.D.<br>
-</i></p>
+ <!---------------body---------->
 
-<p>
-School of Computing and Artificial Intelligence, Southwest Jiaotong University</p>
-<p>
-Engineering Research Center of Sustainable Urban Intelligent Transportation, Ministry of Education, China
-</p>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="https://zqyuan.github.io/#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight" style="height: 1229px;">
+			<div class="text-center">
+				<div class="author-img" style="background-image: profilePhoto.JPG;"></div>
+				<h1 id="colorlib-logo"><a>Zhaoquan Yuan</a></h1>
+<hr/>
+					<p> <i>Associate Professor, Ph.D.</i></p>
+				<p style="FONT-FAMILY:Arial; font-size:14px">School of Computing and Artificial Intelligence, Southwest Jiaotong University</p>
+			</div>
 
-</div>
 
 
-<div class="box">
-<h3>contact</h3>
-<p> ADRESS:
-No. 999, Xi'an Road, Pidu District, Chengdu, China PR. 
-</p>
-
-<p> POSTCODE: 611756.
-</p>
-
+<hr/>
+<div class="text-center">
+<p style="FONT-FAMILY:Arial; font-size:14px">ADRESS: No. 999, Xi'an Road, Pidu District, Chengdu, China PR. POSTCODE: 611756. </p>
+<p> 
 EMAIL:&nbsp; zqyuan0@gmail.com
-
-
-<!----------->
-
-</div>
-<p></p>
-</div>
-</div>
-
-<!*************************目录************************>
-
-<div class="right">
-<div class="wrap">
-<ul>
-<li><a href="index.html">HOMEPAGE</a></li> &nbsp; &nbsp; 
-<li><a href="./#PUBLICATIONS">PUBLICATION</a></li> &nbsp; &nbsp; 
-<li><a href="./#RESOURCE">RESOURCE</a></li> &nbsp; &nbsp; 
-<li><a href="./#recruit">招生信息</a></li>
-
-
-</ul>
-
-</div>
-
-
-<!*************************BRIEF BIOGRAPHY************************>
-<div class="rightBox text">
-<p id="BIOGRAPHY">
-<br>
-<br>
-<br>
-<font size="5"><b>BRIEF BIOGRAPHY</b></font>
 </p>
 
-<p style="text-align:justify"; text-justify:inter-ideograph;>
 
-Zhaoquan Yuan is now an Associate Professor at the <a href="https://scai.swjtu.edu.cn/index.htm"  target="_blank">School of Computing and Artificial Intelligence</a>, Southwest Jiaotong University (SWJTU). 
+
+</div>
+
+
+
+
+<hr/>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="BIOGRAPHY">BIOGRAPHY</a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="招生">招生</a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="NEWS">NEWS</a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="REWARDS">REWARDS</a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="PUBLICATIONS">PUBLICATIONS</a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="TEACHING"> TEACHING</a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="FUNDS"> FUNDS </a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="SERVICES"> SERVICES </a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="STUDENTS"> STUDENTS </a></li>
+						<li class=""><a href="https://zqyuan.github.io/#" data-nav-section="RESOURCE"> RESOURCE </a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+
+
+
+
+		</aside>
+
+
+
+
+ <!--------------- 个人简介---------->
+<div id="colorlib-main">
+<section data-section="BIOGRAPHY">
+<div class="colorlib-narrow-content" align="left">
+<br>   
+<br>
+
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">BRIEF BIOGRAPHY </h1>
+<p style="FONT-FAMILY:Arial; font-size:14px">
+ Zhaoquan Yuan is now an Associate Professor at the <a href="https://scai.swjtu.edu.cn/index.htm"  target="_blank">School of Computing and Artificial Intelligence</a>, Southwest Jiaotong University (SWJTU). 
 I graduated with my bachelor's degree from the School of Computer Science and Technology, University of Science and Technology of China (USTC)</a>, 
 and received my Ph.D. degree in Pattern Recognition and Intelligent System from Multimedia Computing Group (MMC), National Laboratory of Pattern Recognition, 
 Institute of Automation, Chinese Academy of Sciences, advised by <a href="http://nlpr-web.ia.ac.cn/mmc/homepage/csxu.html"  target="_blank">Prof. Changsheng Xu</a>, 
 and co-supervised by <a href="https://faculty.bjtu.edu.cn/9129/"  target="_blank">Prof. Jitao Sang</a>. 
 I was a research visitor in the China-Singapore Institute of Digital Media (CSIDM) and Department of Computing of The Hong Kong Polytechnic University, respectively. 
 
+</p> 
 
-
-<p>
+<p style="FONT-FAMILY:Arial; font-size:14px">
 My research interests encompass a variety of fields, including computer vision, compositional and continual learning, 3D generation, and multi-modal semantic understanding, etc.
+</p>  
+	
+<br>
 
-<!--
-Currently, I am focusing on developing learning mechanisms for dynamics models to better understand the visual physical world.
-注释：Now I focus on developing learning mechanisms of perception and decision-making to achieve general-purpose robot autonomy.
---> 
+ </div>
 
+</section>
+
+
+
+<hr/>
+<!--------------- 招生---------->
+<section data-section="招生">
+<div class="colorlib-narrow-content" align="left">
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">招生信息</h1>
+<p style="FONT-FAMILY:Arial; font-size:14px">
+
+
+袁召全，现任西南交通大学计算机与人工智能学院副教授，硕士生导师。本科毕业于中国科学技术大学计算机科学与技术学院，博士毕业于中国科学院大学（中国科学院自动化研究所）。
+曾先后在中国-新加坡数字媒体研究院、香港理工大学计算机科学系交流访问。
+曾获国际学术会议ACM MM Asia 2024最佳论文奖、MMM 2021最佳论文奖、2024年度中国发明协会发明创业奖创新奖、2024年度广西应急管理协会安全科技进步奖。
+近年来在CVPR、ACM MM、IJCAI、IEEE TMM等国际学术会议及期刊发表论文20余篇。
+任多届CVPR、ACM MM、ACL、AAAI、IJCAI、EMNLP、ICMR、ICME等国际会议程序委员会委员，及多个IEEE Trans、ACM Trans期刊审稿人。
+所指导的研究生曾获西南交通大学优秀硕士论文奖。
+目前主持国家自然科学基金青年项目、四川省自然科学基金项目、四川省科技计划基础研究项目、中国博士后基金项目等多项。
+主要研究方向包括计算机视觉、持续学习、三维生成、多模态语义分析等。
 </p>
+
 
 
 <p>
-<font size="" color="#C70039"> I am looking for highly-motivated students with solid mathematical background or proficient coding skills. 
-If you are interested in working with me, please send me an email. Thanks! </italic> </font
+<font size="" color="#C70039">
+欢迎具备以下条件的同学加入科研团队：<br>
+（1）良好的自我驱动力，对学术探索/工程技术有强烈的兴趣与热情；<br>
+（2）数学与编程基础扎实，对计算机视觉、深度学习、3D视觉、多模态等AI前沿技术感兴趣；<br>
+（3）责任心强，有团队合作精神，诚信可靠。<br>
+有意向的同学请邮件联系：zqyuan0@gmail.com
+</strong> </italic> </font>
 </p>
-
-
-
-</div>
 
 <br>
 
-<!*************************************************>
-
-
-<!*************************** News*************************>
-<div class="rightBox">
-<p id="NEWS">
-<font size="5"><b>NEWS</b></font> &nbsp; 
-</p>
+</div>
+</section>
 
 
 
+<hr/>
+<!---------------新闻---------->
+<section data-section="NEWS">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">NEWS</h1>	
 
-<ul>
-<p style="text-align:justify"; text-justify:inter-ideograph;>
-
-
-
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 <li> 
-<font size="3" color="#C70039"> [<I>Dec 5, 2024</I>] </italic> </font> Our Paper 
+<font size=“14px” color="#C70039"> [<I>Dec 5, 2024</I>] </italic> </font> Our Paper 
 "TMM-CLIP: Task-guided Multi-Modal Alignment for Rehearsal-Free Class Incremental Learning" is awarded as best paper at ACM MM Asia 2024.
 </li>
 
 
 
 <li> 
-<font size="3" color="#C70039"> [<I>March 27, 2024</I>] </italic> </font> Paper 
+<font size="" color="#C70039"> [<I>March 27, 2024</I>] </italic> </font> Paper 
 "PostureHMR: Posture Transformation for 3D Human Mesh Recovery" is accepted by CVPR 2024 (CCF-A). 
 </li>
 
 
-
 <li> 
-<font size="3" color="#C70039"> [<I>July 27, 2023</I>] </italic> </font> Paper 
+<font size="" color="#C70039"> [<I>July 27, 2023</I>] </italic> </font> Paper 
 "Human-Object-Object Interaction: Towards Human-Centric Complex Interaction Detection" is accepted by ACM MM 2023 (CCF-A). 
 </li>
 
 
 <li> 
-<font size="3" color="#C70039"> [<I>Dec 27, 2022</I>] </italic> </font> 邵焕同学获西南交通大学2022年度优秀硕士论文奖！ 
+<font size="“14px”" color="#C70039"> [<I>Dec 27, 2022</I>] </italic> </font> 邵焕同学获西南交通大学2022年度优秀硕士论文奖！ 
 </li>
 
 
-
 <li> 
-<font size="3" color="#C70039"> [<I>June 30, 2022</I>] </italic> </font> Paper 
+<font size="" color="#C70039"> [<I>June 30, 2022</I>] </italic> </font> Paper 
 "Domain-Specific Conditional Jigsaw Adaptation for Enhancing transferability and Discriminability" is accepted by ACM MM 2022 (CCF-A). 
 </li>
 
 
-
 <li> 
-<font size="3" color="#C70039"> [<I>Junly 4, 2021</I>] </italic> </font> Paper 
+<font size="" color="#C70039"> [<I>Junly 4, 2021</I>] </italic> </font> Paper 
 "Hierarchical Multi-Task Learning for Diagram Question Answering with Multi-Modal Transformer" is accepted by ACM MM 2021 (CCF-A, Oral). 
 </li>
 
 
 <li> 
-<font size="3" color="#C70039"> [<I>June 24, 2021</I>] </italic> </font> Paper 
+<font size="" color="#C70039"> [<I>June 24, 2021</I>] </italic> </font> Paper 
 "Contrastive learning in frequency domain for Non-I.I.D. image classification" is awarded as best paper at MMM 2021.
 </li>
 
 
-
 <li> 
-<font size="3" color="#C70039"> [<I>June 1, 2020</I>] </italic> </font> Paper
+<font size="" color="#C70039"> [<I>June 1, 2020</I>] </italic> </font> Paper
 "Adversarial Multimodal Network for Movie Question Answering" is accepted by IEEE Trans. on Multimedia.
 </li>
 
 
 </ul>
 
-
-
-</div>
-
 <br>
+<br>
+</div>
+</section>
 
-
-
-<!**************** Rewards****************>
-
-<div class="rightBox">
-<p id="REWARD">
-<font size="5"><b>REWARDS</b> </font> &nbsp; <a href="#top">Go Top</a>
-</p>
-
-<ul>
-
+	
+<hr/>
+<!--------------科研奖励---------->
+<section data-section="REWARDS">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">REWARDS</h1>	
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 <li>
 国际学术会议 Multimedia Modeling 2021最佳论文奖
 </li>
@@ -441,38 +261,22 @@ If you are interested in working with me, please send me an email. Thanks! </ita
 2024年中国发明协会发明创业奖创新奖（二等，第二完成人）
 </li>
 
-
 </ul>
 
-
-
-</div>
-
 <br>
+</div>
+</section>
 
 
 
 
+<hr/>
+<!---------------论文列表---------->
+<section data-section="PUBLICATIONS"> 
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">SELECTED PUBLICATIONS</h1>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
-
-
-
-<!**********************SELECTED PUBLICATIONS**************************>
-
-<div class="rightBox">
-<p id="PUBLICATIONS">
-<font size="5"><b>SELECTED PUBLICATIONS</b></font>  &nbsp; <a href="#top">Go Top</a>
-</p>
-
-<!--
-<p>
-<font size="3">
-<b>Journal Papers</b></font>
-</p>
---> 
-
-
-<ul>
 
 <li>
 <p style="text-align:justify"; text-justify:inter-ideograph;>
@@ -496,7 +300,8 @@ Zhou Du, <strong>Zhaoquan Yuan</strong><sup>*</sup>, Xiao Wu, Changsheng Xu.<br>
 <p style="text-align:justify"; text-justify:inter-ideograph;>
 TMM-CLIP: Task-guided Multi-Modal Alignment for Rehearsal-Free Class Incremental Learning.<br>
 Yuankang Pan, <strong>Zhaoquan Yuan</strong>, Xiao Wu, Zechao Li,  Changsheng Xu.<br>
-<I>Proceedings of ACM Multimedia Asia, pp. 1 - 7.  December 03–06, 2024, Auckland, New Zealand.  https://doi.org/10.1145/3696409.3700182. </I>
+<I>Proceedings of ACM Multimedia Asia, pp. 1 - 7.  December 03–06, 2024, Auckland, New Zealand.  <br/>
+https://doi.org/10.1145/3696409.3700182. </I>
 (MM Asia, <font size="3" color="#0000FF"> <strong>最佳论文奖</strong> </italic> </font>)
 </li>
 
@@ -504,7 +309,7 @@ Yuankang Pan, <strong>Zhaoquan Yuan</strong>, Xiao Wu, Zechao Li,  Changsheng Xu
 <p style="text-align:justify"; text-justify:inter-ideograph;>
 Person in Uniforms Re-Identification.<br>
 Chongyang Xiang, Xiao Wu, Jun-Yan He,  <strong>Zhaoquan Yuan</strong>, Tingquan He.<br>
-<I>ACM Transactions on Multimedia Computing Communications and Applications, Volume 21, Issue 2, pp. 1 - 23, 2024. 
+<I>ACM Transactions on Multimedia Computing Communications and Applications, Volume 21, Issue 2, pp. 1 - 23, 2024. <br/>
 https://doi.org/10.1145/3703839.  </I>
 </li>
 
@@ -631,48 +436,40 @@ Tag-aware Image Classification via Nested Deep Belief Nets.<br>
 <I>2013 IEEE international conference on Multimedia and Expo, pp. 1-6. IEEE, 2013. July 15-19, 2013. San Jose, CA, USA. </I> (ICME, CCF-B类)
 </li>
 
+
+
 </ul>
 
-
+<br> 
 
 
 </div>
-
-<br>
-
-
-<!****************************** TEACHING******************************>
-<div class="rightBox">
-<p id="TEACHING">
-<font size="5"><b>TEACHING</b></font> &nbsp; 
-</p>
-
-
-<p>
-<font size="3">
-<b>Undergraduate Courses</b></font>
-</p>
+</section>
 
 
 
+<hr/>
+<!--------------教学---------->
+<section data-section="TEACHING">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;"> TEACHING </h1>
 
-<ul>
+	
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">Undergraduate Courses</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
+
 
 <li>Digital Image Processing, SCAI004012, 2024--2025(1)
 </li>
 
-
 <li>Natural Language Processing, SCAI008012, 2023--2024(2)
 </li>
-
 
 <li>Digital Image Processing, SCAI004012, 2023--2024(1)
 </li>
 
-
 <li>Digital Image Processing, SCAI004012, 2022--2023(1)
 </li>
-
 
 <li>Digital Image Processing, 3143324, 2021--2022(1)
 </li>
@@ -696,50 +493,39 @@ Tag-aware Image Classification via Nested Deep Belief Nets.<br>
 </ul>
 
 
-<p>
-<font size="3">
-<b>Graduate Courses</b></font>
-</p>
-
-
-<ul>
+<br>
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">Graduate Course</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 
 <li> Natural Language Processing, 2024--2025(2)
 </li>
 
-
-
 <li> Natural Language Processing, 2023--2024(2)
 </li>
-
 
 <li> Natural Language Processing, 2022--2023(2)
 </li>
 
-
 <li> Natural Language Processing, 2021--2022(2)
 </li>
 
+
 </ul>
 
-
-</div>
-
-
-
 <br>
+</div>
+</section>
 
 
 
-<!**************** Grant and Funds****************>
 
-<div class="rightBox">
-<p id="FUNDS">
-<font size="5"><b>GRANT AND FUNDS</b> </font> &nbsp; <a href="#top">Go Top</a>
-</p>
-
-<ul>
+<hr/>
+<!--------------项目---------->
+<section data-section="FUNDS">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">GRANT AND FUNDS</h1>	
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 <li>
 Intelligent Parameter Learning and Image Reconstruction in Adaptive Optical Systems, 2024.12 -- 2026.11, the Fund of National Laboratory on Adaptive Optics, China, FNLAO-24-ZD-O02
@@ -769,35 +555,24 @@ Semantic Understanding toward Video Question Answering, 2019.01 -- 2020.12, Fund
 
 </ul>
 
-
-
-</div>
-
-
 <br>
-
-<!**************** Services ****************>
-
-<div class="rightBox">
-<p id="FUNDS">
-<font size="5"><b>PROFESSIONAL ACTIVITIES</b> </font> &nbsp; <a href="#top">Go Top</a>
-</p>
-
-<p>
-<font size="3">
-<b>Program Committee Member</b></font>
-</p>
+</div>
+</section>
 
 
 
 
-<ul>
+<hr/>
 
-<!--
-<li>IEEE Conference on Computer Vision and Pattern Recognition, 2023 – present </li>
-<li>International Conference on Computer Vision, 2024 – present </li>
-<li>Annual Conference on Neural Information Processing Systems, 2024 – present </li>
--->
+<!--------------学术服务---------->
+<section data-section="SERVICES">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;">SERVICES </h1>	
+
+	
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">Program Committee Member</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
+
 
 <li>ACM International Conference on Multimedia, 2019 – present </li>
 <li>Association for the Advancement of Artificial Intelligence, 2022 – present </li>
@@ -809,23 +584,12 @@ Semantic Understanding toward Video Question Answering, 2019.01 -- 2020.12, Fund
 <li>International Conference on Multimedia Modeling, 2019 – present </li>
 <li>ACM International Conference on Multimedia in Asia, 2019 – present </li>
 
-
-
-
 </ul>
 
 
-<p>
-<font size="3">
-<b>Journal Reviewer</b></font>
-</p>
-
-<ul>
-
-<!--
-<li>IEEE Transactions on Image Processing </li>
-<li>IEEE Transactions on Pattern Analysis and Machine Intelligence  </li>
--->
+<br>
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">Journal Reviewer</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 <li>IEEE Transactions on Multimedia </li>
 <li>IEEE Transactions on Neural Networks and Learning Systems </li>
@@ -836,102 +600,69 @@ Semantic Understanding toward Video Question Answering, 2019.01 -- 2020.12, Fund
 <li>Multimedia Tools and Applications </li>
 
 
-</div>
+</ul>
+
+
 
 <br>
+<br>
+</div>
+</section>
+
+
+<hr/>
 
 
 
+<!--------------学生名单---------->
+<section data-section="STUDENTS">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;"> STUDENTS </h1>	
 
-<!**************** students****************>
-
-<div class="rightBox">
-<p id="STUDENTS">
-<font size="5"><b>STUDENTS</b> </font> &nbsp; <a href="#top">Go Top</a>
-</p>
-
-
-<!--
-<p>
-<font size="3">
-<b>Collaborating Students</b></font>
-</p>
--->
-
-
-<p>
-<font size="3">
-<b>PhD Students</b></font>
-</p>
-
-<ul>
+	
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">PhD Students</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 
 <li>Jing Zhou (Co-superviser)
 </li>
 
-
 <li>Yuankang Pan (Co-superviser)
 </li>
-
 
 <li>Fangying Xiong (Co-superviser)
 </li>
 
-
-
 <li>Zhou Du (Co-superviser)
 </li>
-
-
-
-
 
 </ul>
 
 
-
-<p>
-<font size="3">
-<b>Master Students</b></font>
-</p>
-
-<ul>
+<br>
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">Master Students</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 <li>Yuting Liu, Yuan Lin, Guoshuai Liang, Liaoliao Ren (Co-superviser), Kunlin Liang (Co-superviser)
 </li>
 
-
-
 <li>Yuke Li, Yuting Tang, Maorui Zhang, Cong Zheng, Xuehui Chen, Yang Liu (Co-superviser), Tao Liu (Co-superviser), Jicheng Liu (Co-superviser)
 </li>
-
-
-
-
 
 <li>Zihao Luan, Jiangbo Chai, Hongxiao Yuan, Ting Pan, Fanpeng Li, Zimeng Wang (Co-superviser), Shengkai Wan (Co-superviser), Xinhan Lian (Co-superviser)
 </li>
 
-
-
-
 <li>Zining Wang, Wen Xu, Jie Tang, Zijia Liang, Bojie Ma (Co-superviser), Yuan Ma (Co-superviser), Zhun Zhong (Co-superviser)
 </li>
-
-
-
 
 </ul>
 
 
+<br>
 
-<p>
-<font size="3">
-<b> Graduated Students</b></font>
-</p>
+<h3 style="FONT-FAMILY:Arial; font-size:18px;">Graduated Students</h3>
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
-<ul>
 
 <li>Chengbin Zhao, Huancheng Xu, Baili Zhou, Huan Shao (优秀硕士论文奖), Xiao Peng
 </li>
@@ -939,27 +670,18 @@ Semantic Understanding toward Video Question Answering, 2019.01 -- 2020.12, Fund
 </ul>
 
 
+
 <br>
-
-
 </div>
+</section>
 
 
-
-
-
-<!*********************** RESOURCE**************************>
-<div class="rightBox">
-<p id="RESOURCE">
-<font size="5"><b>RESOURCE</b></font>  &nbsp; <a href="#top">Go Top</a>
-</p>
-
-
-<ul>
-
-  
-
-  
+<hr/>
+<!--------------资源链接---------->
+<section data-section="RESOURCE">
+<div class="colorlib-narrow-content" align="left">	
+<h1 style="FONT-FAMILY:Arial; font-size:25px;"> RESOURCE </h1>	
+<ul style=" FONT-FAMILY:Arial; padding-left:14px; font-size:14px" >
 
 <li><a href="https://openaccess.thecvf.com/menu"  target="_blank">Computer Vision Foundation</a>
 </li>
@@ -982,72 +704,26 @@ Semantic Understanding toward Video Question Answering, 2019.01 -- 2020.12, Fund
 <li><a href="http://www.zhuanzhi.ai/topic/2001826911580295" target="_blank">专知知识分享平台</a>
 </li>
 
-<br>
-
-
 </ul>
 
-
-</div>
-
-
-
-
-<!*************************招生信息************************>
-<div class="rightBox">
-<p id="recruit">
-<font size="5"><b>招生信息</b></font>  &nbsp; <a href="#top">Go Top</a>
-</p>
-
-
-
-<p style="text-align:justify"; text-justify:inter-ideograph;>
-
-袁召全，现任西南交通大学计算机与人工智能学院副教授，硕士生导师。本科毕业于中国科学技术大学计算机科学与技术学院，博士毕业于中国科学院大学（中国科学院自动化研究所）。
-曾先后在中国-新加坡数字媒体研究院、香港理工大学计算机科学系交流访问。
-曾获国际学术会议ACM MM Asia 2024最佳论文奖、MMM 2021最佳论文奖、2024年度中国发明协会发明创业奖创新奖、2024年度广西应急管理协会安全科技进步奖。
-近年来在CVPR、ACM MM、IJCAI、IEEE TMM等国际学术会议及期刊发表论文20余篇。
-任多届CVPR、ACM MM、ACL、AAAI、IJCAI、EMNLP、ICMR、ICME等国际会议程序委员会委员，及多个IEEE Trans、ACM Trans期刊审稿人。
-所指导的研究生曾获西南交通大学优秀硕士论文奖。
-目前主持国家自然科学基金青年项目、四川省自然科学基金项目、四川省科技计划基础研究项目、中国博士后基金项目等多项。
-主要研究方向包括计算机视觉、持续学习、三维生成、多模态语义分析等。
-
-
-
-<br>
-
-
-<p>
-<font size="" color="#C70039">
-欢迎具备以下条件的同学加入科研团队：<br>
-（1）良好的自我驱动力，对学术探索/工程技术有强烈的兴趣与热情；<br>
-（2）数学与编程基础扎实，对计算机视觉、深度学习、3D视觉、多模态等AI前沿技术感兴趣；<br>
-（3）责任心强，有团队合作精神，诚信可靠。<br>
-有意向的同学请邮件联系：zqyuan0@gmail.com
-</strong> </italic> </font>
-</p>
-
-<br>
-
-</div>
-<!*************************************************>
-
-
-
-
-<!*****************************updated date***********************************>
-<div class="rightBox">
-
-Last updated date: Jan 4, 2025.
 <br>
 </div>
-<!*********************************Visit tracker**********************************>
+</section>
+<hr/>
 
 
 
+<!--------------更新日期---------->
+<div class="colorlib-narrow-content" align="left">
+<p style="FONT-FAMILY:Arial; font-size:14px">
+ Last updated date: Jan 4, 2025.
+</p> 
+ 
+	
+<br>
+</div>
+        
+	
+<!--------------结束---------->
 
-</script>
-
-</body>
-
-</html>
+</body></html>
